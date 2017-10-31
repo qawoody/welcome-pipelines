@@ -6,19 +6,15 @@ variables:
 events:
   build:
     steps:
-      - node_v7.10:
-          type: script
+      - welcome:
           script:
-            - nvm install v7.10
-            - nvm use 7.10
+            - echo "WELCOME"
+            - cat welcome.txt
       - script1:
           script:
-            - npm install babel-preset-latest
             - echo "TESTED DEPLOY"
-            - pipelines-deploy
   pr-merged:
     steps:
       - deploy:
           script:
             - echo "Pull request merged"
-            - pipelines-deploy

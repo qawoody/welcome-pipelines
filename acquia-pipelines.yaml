@@ -8,7 +8,7 @@ events:
     steps:
       - script1:
           script:
-            - echo "TESTED DEPLOY"
+            - echo "TESTED DEPL.OY"
   pr-merged:
     steps:
       - deploy:

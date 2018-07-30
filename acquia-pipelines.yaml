@@ -9,7 +9,6 @@ events:
       - script1:
           script:
             - echo "TESTED DEPLOY"
-            - sleep 2m
   pr-merged:
     steps:
       - deploy:

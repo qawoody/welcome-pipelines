@@ -8,6 +8,7 @@ events:
     steps:
       - script1:
           script:
+            - sleep 1m
             - echo "TESTED DEPL.OY"
   pr-merged:
     steps:
